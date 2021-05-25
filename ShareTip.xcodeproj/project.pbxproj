@@ -7,19 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F950B5DF265CEE5700576C41 /* UIViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F950B5DE265CEE5700576C41 /* UIViewControllerExtension.swift */; };
 		F9ACF5FB24EE650800F22DD0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9ACF5FA24EE650800F22DD0 /* AppDelegate.swift */; };
 		F9ACF5FD24EE650800F22DD0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9ACF5FC24EE650800F22DD0 /* SceneDelegate.swift */; };
-		F9ACF5FF24EE650800F22DD0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9ACF5FE24EE650800F22DD0 /* ViewController.swift */; };
+		F9ACF5FF24EE650800F22DD0 /* MainController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9ACF5FE24EE650800F22DD0 /* MainController.swift */; };
 		F9ACF60224EE650800F22DD0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F9ACF60024EE650800F22DD0 /* Main.storyboard */; };
 		F9ACF60424EE650A00F22DD0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F9ACF60324EE650A00F22DD0 /* Assets.xcassets */; };
 		F9ACF60724EE650A00F22DD0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F9ACF60524EE650A00F22DD0 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F950B5DE265CEE5700576C41 /* UIViewControllerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtension.swift; sourceTree = "<group>"; };
 		F9ACF5F724EE650800F22DD0 /* ShareTip.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ShareTip.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F9ACF5FA24EE650800F22DD0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F9ACF5FC24EE650800F22DD0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		F9ACF5FE24EE650800F22DD0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F9ACF5FE24EE650800F22DD0 /* MainController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainController.swift; sourceTree = "<group>"; };
 		F9ACF60124EE650800F22DD0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F9ACF60324EE650A00F22DD0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F9ACF60624EE650A00F22DD0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -37,6 +39,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F950B5E2265CEE7500576C41 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				F950B5DE265CEE5700576C41 /* UIViewControllerExtension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		F9ACF5EE24EE650800F22DD0 = {
 			isa = PBXGroup;
 			children = (
@@ -56,9 +66,10 @@
 		F9ACF5F924EE650800F22DD0 /* ShareTip */ = {
 			isa = PBXGroup;
 			children = (
+				F950B5E2265CEE7500576C41 /* Extensions */,
 				F9ACF5FA24EE650800F22DD0 /* AppDelegate.swift */,
 				F9ACF5FC24EE650800F22DD0 /* SceneDelegate.swift */,
-				F9ACF5FE24EE650800F22DD0 /* ViewController.swift */,
+				F9ACF5FE24EE650800F22DD0 /* MainController.swift */,
 				F9ACF60024EE650800F22DD0 /* Main.storyboard */,
 				F9ACF60324EE650A00F22DD0 /* Assets.xcassets */,
 				F9ACF60524EE650A00F22DD0 /* LaunchScreen.storyboard */,
@@ -94,7 +105,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1160;
-				LastUpgradeCheck = 1160;
+				LastUpgradeCheck = 1230;
 				ORGANIZATIONNAME = YardenSwisa;
 				TargetAttributes = {
 					F9ACF5F624EE650800F22DD0 = {
@@ -138,7 +149,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F9ACF5FF24EE650800F22DD0 /* ViewController.swift in Sources */,
+				F9ACF5FF24EE650800F22DD0 /* MainController.swift in Sources */,
+				F950B5DF265CEE5700576C41 /* UIViewControllerExtension.swift in Sources */,
 				F9ACF5FB24EE650800F22DD0 /* AppDelegate.swift in Sources */,
 				F9ACF5FD24EE650800F22DD0 /* SceneDelegate.swift in Sources */,
 			);
@@ -192,6 +204,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -252,6 +265,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -287,6 +301,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = TDSLN88YRD;
 				INFOPLIST_FILE = ShareTip/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -305,6 +320,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = TDSLN88YRD;
 				INFOPLIST_FILE = ShareTip/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
